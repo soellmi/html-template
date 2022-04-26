@@ -1,0 +1,19 @@
+//operator precedence
+const now = 2021;
+const myAge = now - 1985;
+const brothersAge =now - 1991;
+
+//console.log(now - 1991 > now - 1985);
+
+//from left to right
+//console.log(25-10-5)
+
+//from right to left
+let x, y;
+x=y=25-10-5
+//console.log(x, y);
+
+//Sometimes you need to tell JavaScript what to calculate first
+//const averageAge=myAge+brothersAge/2
+const averageAge = (myAge+brothersAge)/2
+console.log(myAge, brothersAge, averageAge)

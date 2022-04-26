@@ -1,0 +1,99 @@
+//let age = 30;
+//console.log(age);
+
+//age=31
+//console.log(age)
+
+//const birthYear = 1985;
+//console.log(birthYear);
+
+// mathematical operators
+
+//const myAge = 2021 - 1985;
+//console.log(myAge)
+
+//const brothersAge = 2021 - 1991;
+//console.log(myAge, brothersAge)
+
+//Best practice
+const now = 2021;
+const myAge = now - 1985;
+const brothersAge = now - 1991
+//console.log(myAge, brothersAge)
+
+//console.log(myAge * 2, myAge / 10)
+
+//concatinate
+
+ const firstName = "Mia";
+ const lastName = "Söllvander";
+ //console.log(firstName + " " + lastName)
+
+//assignment operator and the most straightforward one is =
+
+let x = 10 + 5;
+//console.log(x)
+
+x +=10;
+//x = x + 10 reassigning x value as x is 25 (so right now x holds the value of 25)
+//console.log(x);
+
+x *= 4;
+// x = x *4 =100 (so right now x holds the value of 100)
+//console.log(x);
+
+x++;
+// plus operator - it increases the value by 1
+//console.log(x)
+
+x--;
+// minus operator - it decreases the value by 1
+//console.log(x)
+
+//Comparison operators
+//console.log(myAge > brothersAge);
+
+// checking if my age is greater than my brother's
+//console.log(brothersAge >=18);
+//greater or equal
+
+const isFullAge = brothersAge >=18;
+//the variable isFullAge will be holding the boolean value 
+//console.log(isFullAge);
+
+//console.log(now - 1991 > now - 1985);
+//How does JavaScript know what to do first? Does the calculation before it does the comparison
+
+const hasDriversLicense =true;
+
+const hasGoodVision = true;
+
+//A and B variables
+
+//console.log(hasDriversLicense && hasGoodVision)
+//&& this is the and operator
+//both values needs to be true for the operation to return true
+//console.log(hasDriversLicense || hasGoodVision)
+//|| this is the or operator
+//only one needs to be true for the operation to return true
+
+//console.log(!hasDriversLicense);
+// '!' = this is the not operator
+
+const canDrive = hasDriversLicense && hasGoodVision;
+//console.log(canDrive);
+
+if (hasGoodVision && hasDriversLicense){
+    console.log("It's ok, you can drive!");
+} else { console.log ("Someone else should drive");}
+
+const isTired = false;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasGoodVision && hasDriversLicense && !isTired){
+    console.log ("Sara is ok to drive");
+} else{
+    console.log("Someone else should drive")
+}
+
