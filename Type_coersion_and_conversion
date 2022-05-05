@@ -1,0 +1,28 @@
+//TYPE COERSION
+//converts a value from one type to another automatically
+
+//console.log("I'm " + 36 + " years old")
+//console.log(36);
+
+//console.log("23"-"10"-3);
+//console.log("23"+"18"+3)
+
+//TYPE CONVERSION
+//When you converts a value by yourself
+const year = "1992"
+//console.log(year+15)
+
+//console.log(Number(year)+15)
+
+//LOGICAL OPERATORS
+//console.log("23" > "18");
+//type coersion, converts the strings to numbers, JavaScript does it.
+
+//GUESS THE OUTPUT
+let n="1"+1
+//1 to string then we add 1 (11)
+n=n-1;
+//n=11
+//"11" (string) -1 = 10
+//converted to a number so 11-1 is 10
+console.log(n)

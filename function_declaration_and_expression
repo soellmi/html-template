@@ -1,0 +1,28 @@
+//FUNCTION DECLARATION AND EXPRESSSION
+//FUNCTION DECLARATION: When you create a function with a name.
+//We can call it before it's defined in the code.
+//FUNCTION EXPRESSION: Here they name may be omitted making the function "anonymous"
+
+//In JavaScript functions are just values and if it's a value we can store it in a variable.
+
+//FUNCTION DECLARATION
+//HOISTING allows the functions to be used in the code before they are declared.
+//Function declarations are hoisted.
+//General way of thinking about how execuation contexts wirj in JS
+
+hoisted();//gives the right output without giving an error
+
+function hoisted(){
+    console.log("This is hoisted");
+}
+
+//FUNCTION EXPRESSIONS
+console.log(notHoisted)
+
+notHoisted();
+
+const notHoisted = function{
+    console.log("This is not hoisted")
+};
+
+//When something is hoisted you can call for it before you declare it

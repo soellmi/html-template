@@ -1,0 +1,49 @@
+//SWITCH
+//an alternative way of writing a complicated if/else statements
+
+const day ="Mia";
+
+switch (day){
+    case "monday":
+        //day==="monday and : not ;"
+        console.log("Plan my course in JavaScript");
+        //can execute mutiple lines
+        console.log("Go to the gym");
+        break;
+        //you need to end the case with break
+    case "tuesday":
+        console.log("Prepare for theory lesson");
+        break;
+    case "wednesday":
+    case "thursday":
+        //you can output the same thing to different values
+        console.log("Write some code examples")
+        break;
+    case "friday":
+        console.log("Give students feedback");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy the weekend!")
+        break;
+    default:
+        console.log("Not a valid day")
+        //default will be executed if all other options fail
+    
+}
+
+//solution
+if (day ==="monday"){
+    console.log("Plan my course in JavaScript");
+    console.log("Go to the gym");
+} else if (day === "tuesday"){
+    console.log("Prepare for theory lesson");
+} else if (day === "wednesday || thursday"){
+    console.log("Write some code examples")
+} else if (day === "friday"){
+    console.log("Give students feedback");
+} else if (day === "saturday" || "sunday"){
+    console.log("Enjoy the weekend!");
+} else {
+    console.log("Not a valid day");
+}

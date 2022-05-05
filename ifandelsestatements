@@ -1,0 +1,59 @@
+//STRINGS AND TEMPLATE LITERALS  
+const firstName = "Helena";
+const job= "fullstack developer";
+const birthYear = 1985;
+const year =2021;
+
+const helena =
+"I'm " + firstName + ", a " + (year-birthYear) + " years old" + job + "!"
+//console.log(helena);
+
+const helenaNew = `I'm ${firstName}, a ${year-birthYear} years old ${job}!`;
+//console.log(helenaNew);
+
+//console.log("String with \n\
+//mutiple \n\
+//lines");
+
+//console.log(`String
+//with
+//mutiple
+//lines`)
+
+
+
+//TAKING DECISIONS - IF/ELSE
+
+//First we define our problem/task
+//Then we break it apart into smaller pieces/tasks
+
+//Task: Check if the person is old enough to get their driver's license
+// 1. First we need a variable to store the age of the person.
+// 2. We need a value to store in a variable will represent the required age to get a driver's license. 
+// 3. We need to compare the person's the age against the required age. 
+// 4. We need to make a decision based on the evaluation, true or false.
+
+const age = 12;
+//person's age is 19
+
+//const requiredAge = 18; (not really need it the one below is better)
+//requiered age for getting a driver's license
+
+const isOfAge =age >= 18;
+//compare the person's age against the required age
+
+//Here wee took the decision:
+//Condition in brackets
+//Code in curly brackets
+//if(isOfAge) {
+    //console.log ("YAY you can get a driver's licens")}
+//} else {console.log ("Sorry, come back in a few years")}
+
+//We don't have to store the condition in a variable we can also do it directly in the statement
+if (age >= 18) {console.log ("YAY you can get a driver's licens")
+} else {
+    const yearsLeft = 18-age;
+    console.log (`Sorry you are too young. Wait another ${yearsLeft} years`)
+}
+
+

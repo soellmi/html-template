@@ -1,0 +1,56 @@
+//ARRAYS
+
+//We don't want to do it like this we want to store it in one place
+//const dog1 ="Tore";
+//const dog2 ="Clementine";
+//const dog3 ="Doris";
+
+//an array is kind of like a big container where we can store stuff if we have more than one value
+//--> an array of strings
+
+//const years = [1985, 1990, 1994]
+//console.log(years);
+
+const dogs = ["Tore", "Celemtine", "Doris"]
+//console.log(dogs);
+
+//Arrays ALWAYS start with zero!!!
+//console.log(dogs[2]);
+
+//This will give us the exact number of elements in the array
+//console.log(dogs.length);
+
+//console.log(dogs[dogs.length - 1]);
+//useful when working with big data and arrays when you don't know how many elements it contains
+
+//It's possible to mutate arrays
+dogs[0] = "Trasan"
+//console.log(dogs)
+
+//Arrays can hold different data types and values
+const dogName ="Tore";
+const tore = [dogName, "Miniature Bull Terrier", 2021-2018, "He likes sleeping in his fluffy bed", dogs]
+//console.log(tore);
+//console.log(tore.length);
+//console.log(tore[2])
+
+const calcAge =function (birthYear) {
+    return 2021-birthYear;
+};
+//function to calculate age
+
+const yearOfBirth = [1999, 1985, 2001, 2016, 1978]
+//array with birth years
+
+//calcAge(yearOfBirth);
+//function call
+
+//console.log(calcAge[yearOfBirth])
+//js has no idea what to do
+
+const firstAge =calcAge (yearOfBirth[0])
+//calculating the first age of the array
+const secondAge =calcAge(yearOfBirth[3])
+
+
+console.log(firstAge, secondAge)

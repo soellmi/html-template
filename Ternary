@@ -1,0 +1,15 @@
+// THE CONNDITIONAL OPERATOR, TERNARY
+
+const age=25;
+
+age >= 18 
+//condition
+    ? console.log("I like to drink beer") 
+    //if
+    : console.log("I'll drink water...");
+    //else
+
+const drink=age>=18 ? "beer" : "water";
+console.log(drink);
+
+console.log(`I like to drink ${age >=18 ? "beer" : "water"}`)

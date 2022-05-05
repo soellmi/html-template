@@ -1,0 +1,81 @@
+//OBJECTS
+/*
+//Array below
+const helenaArray=["Helena", "Johansson, 2022-1985" , "developer"]
+
+//If we want to create an object we do so by using {}
+//Objects are one of the fundamental things in JavaScript
+//The advantage with using objects is that it doesn't matter in what order we access them
+const helenaObject={
+    firstName: "Helena",
+    lastName: "Johansson",
+    age: 2022-1985,
+    job: "developer",
+}
+//The above object hold four properties and we can add values to the properties
+
+//So how do we get data from an object?
+//console.log(helenaObject)
+
+//To get a specific property there are two ways
+//We should use the .notation 
+//console.log(helenaObject.firstName)
+
+//We can use the bracket notation but it is very rarely used
+//console.log(helenaObject["firstName"])
+
+//We can put expressions in the [] notation but not in the.notation
+//However, when we are working with modern frameworks you don't really have to use this
+
+const info =prompt(
+    "What information do you want to know about Helena? Choose between first name, last name, age or job"
+);
+//console.log(info);
+console.log(helenaObject.info);
+//Here we are trying to access a prompt that doesn't exist
+console.log(helenaObject[info])
+//We will rarely have to work in the above way [bracket notation] since we are going to use modern frameworks
+
+//Below is how to handle an error
+if (helenaObject[info]){
+    console.log(helenaObject[info]);
+} else{
+    console.log ("Sorry, wrong input");
+}
+*/
+
+//console.log(helenaObject)
+
+//This is how you put more properties onto the object
+//. notation
+
+//helenaObject.location="Falköping";
+//[]notation
+//helenaObject["website"]="klarr.se";
+//console.log(helenaObject);
+
+//Small challenge for you!
+//Write a sentence in a dynamic way. Do not hardcode any of the information. 
+//YOu should call for the object and then the property of that object that hold the information you want to put in a sentence.
+//Hint: use one array, if you want to get the number of dogs you need to use multiple dots. 
+
+//'This' keyword
+
+const helenaObject = {
+    firstName: "Helena",
+    lastName: "Johansson",
+    age: 1985,
+    job: "developer",
+    //Array
+    dogs: ["Tore", "Clementine", "Doris"],
+    //Boolean value
+    hasDriversLicense: true,
+
+
+    calcAge: function(){
+        console.log(this);
+        return 2022-this.birthYear;
+    }
+
+
+}

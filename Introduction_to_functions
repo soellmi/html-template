@@ -1,0 +1,36 @@
+//INTRODUCTION TO FUNCTIONS
+//Are for storing pieces of code
+function logFunction(){
+    console.log("This is a function");
+}
+//defines the function
+
+//logFunction();
+//calling for the function to execute
+
+//A function is kind of like a machine where you can put in ingredients and get a finished product. 
+//Let's say we want to take a really simple chocolate cake with these three ingredients
+//Butter, chocolate and eggs
+
+function chocolateCake(butter, chocolate, eggs){
+    const cake = `A simple cake with ${butter} cups of butter ${chocolate} cup of chocolate and ${eggs} eggs`;
+    return cake;
+}
+//Defined the function
+
+//cake does not exist here
+
+chocolateCake(1, 2, 3);
+//We need to store the result of the function in a variable
+//Declared a variable and assigned it to the function
+const yummyCake = chocolateCake(1, 2, 3);
+console.log(yummyCake)
+
+//The variables of the parameters are called arguments
+
+function calcAge(age1, age2){ //Declare the function, name it, put in paramters (sometimes)
+    const resAge=age1+age2 //Stored them in a new variable
+    return resAge; //If we don't return it we won't have access to it
+}
+
+console.log(calcAge(20, 10))//We called for the function in the function log (but you can also store it in a variale first)
